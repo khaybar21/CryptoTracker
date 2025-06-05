@@ -38,19 +38,20 @@ function App() {
     (x) => x.id === "bitcoin" || x.id === "ethereum" || x.id === "dogecoin"
   );
 
-  function makeData(price) {
-    const d = [];
-    const n = new Date();
-    for (let i = 22; i >= 0; i -= 2) {
-      const t = new Date(n);
-      t.setHours(n.getHours() - i);
-      t.setMinutes(0);
-      const label = t.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-      const y = price + (Math.random() - 0.5) * 20; 
-      d.push({ label, y });
-    }
-    return d;
+ function makeData(price) {
+  const d = [];
+  const n = new Date();
+  for (let i = 23; i >= 0; i--) {
+    const t = new Date(n);
+    t.setHours(n.getHours() - i);
+    t.setMinutes(0);
+    const label = t.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    const y = price + (Math.random() - 0.5) * 20; 
+    d.push({ label, y });
   }
+  return d;
+}
+
 
   const chartStuff = (id, base) => {
     return {
