@@ -1,0 +1,99 @@
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+.table-container {
+  width: 100%; 
+  max-width: 700px; 
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.td {
+  padding: 10px;
+  text-align: left;
+}
+
+.crypto-info {
+  display: flex;
+  align-items: center;
+}
+
+.crypto-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.crypto-name {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.crypto-symbol {
+  margin: 0;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.price-change {
+  font-weight: bold;
+}
+
+.price-change.positive {
+  color: green;
+}
+
+.price-change.negative {
+  color: red;
+}
+
+.charts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.charts > div {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 40px;
+}
